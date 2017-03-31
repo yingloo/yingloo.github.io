@@ -1,0 +1,50 @@
+body {
+	font-family: "Times New Roman";
+}
+
+.main-content {
+	margin: 10px 15% 10px 15%;
+}
+
+.self-photo {
+	width: 145px;
+}
+
+.school-logo {
+	width: 140px;
+	height: 140px;
+}
+
+.bold-font {
+	font-weight: bold;
+}
+
+.left-align {
+	float: left;
+}
+
+.right-align {
+	float: right;
+}
+
+.info-content {
+	margin-left: 18px;
+}
+
+.menu {
+	text-align: center;
+	background-image: url('../img/bg_top.jpg');
+}
+
+.personal-info {
+	display: inline-block;
+}
+
+.headline {
+	font-size: 18px;
+	border-bottom: dashed 1px #808080;
+}
+
+.footer {
+	text-align: center;
+}
