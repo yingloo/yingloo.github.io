@@ -1,9 +1,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Ying Lu, PhD, Research Assistant of Computer Science, Rensselaer Polytechnic Institute. Her research interests include parallel computing and numerical simulation.">
+        <meta name="description" content="Ying Lu, Ph.D., from Rensselaer Polytechnic Institute. Ying is under supervision of Prof. Jeff Trinkle. Her research interests include parallel computing, multibody dynamics and robotics simulation.">
         <meta name="author" content="Ying Lu, RPI">
-        <meta name="keywords" content="parallel computing, rototics, numerical simulation">
+        <meta name="keywords" content="parallel computing, rototics, multibody dynamics">
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
@@ -14,7 +14,7 @@
                     <tbody>
                         <tr>							 
                             <p>  
-                                <b>This page is currently maintained by <a href="http://homepages.rpi.edu/~luy4/">Ying Lu</a>.</b>
+                                <b>This page is currently maintained by <a href="http://yinglu.me/">Ying Lu</a>.</b>
                             </p>
 
                         <p>
@@ -44,6 +44,14 @@
                 <div>
                     <p><span><a href="http://bulletphysics.org/wordpress/">Bullet</a>
                         <br>
+                        The recent release of Bullet incorporates pybullet for robotics, deep learning, VR and haptics, in collaboration
+                        with Google brain team. As for the PGS LCP constraint solver, it has a new option to terminate as soon as the
+                        residual (error) is below a specified tolerance (instead of fixed number of iterations). There is also support
+                        to load some MuJoCo MJCF xml files. Bullet 2.87 added reinforcement learning environment to allow the user of 
+                        pybullet inside Unity 3D for robotics and reinforcement learning. 
+                        <br>
+                        <font size="2"><i> 05/07/2018.</i></font> 
+                        <br>
                         Bullet Physics is a professional open source collision detection, rigid body and soft body dynamics library.  
                         Bullet relaxes the friction model to make solution by projected Gauss-Seidel possible. Bullet's strength is 
                         in its recent developments for parallel computation. Collision detection and physics solutions can run entirely 
@@ -58,7 +66,18 @@
 
                 <li>
                 <div>
-                    <p><span> <a href="http://www.chronoengine.info/chronoengine/">Chrono::Engine</a>
+                    <p><span> <a href="https://projectchrono.org/  ">Chrono</a>
+                        <br>
+                        Chrono is a physics-based modelling and simulation infrastructure based on a platform-independent, open-source design.
+                        The core of Chrono is the Chrono::Engine middleware, an object-oriented library whose C++ API can be used to develop
+                        simulation software. Among the other components of the Chrono ecosystems are: Chrono::Parallel, a library for enabling
+                        parallel computation in Chrono; Chrono::Vehicle, which provides support for vehicle dynamics simulation; Chrono::FEA,
+                        which provides support for linear and nonlinear Finite Element Analysis; Chrono::FSI, which provides support for
+                        Fluid-Solid Interaction problems; Chrono::PyEngine, which enables one to use Chrono::Engine in Python; Chrono::SolidWorks,
+                        an add-in for SolidWorks, which can be used to export 3D models and geometries from a CAD file into Chrono.
+                        Chrono is released under a permissive BSD3 license.    
+                        <br>
+                        <font size="2"><i>05/07/2018.</i></font>                        
                         <br>
                         ProjectChrono is a set of open-source tools for mechanical simulations.  The core of ProjectChrono is the Chrono::Engine
                         C++ middleware, a powerful object-oriented set of libraries and their application program interface (API) can be freely 
@@ -69,7 +88,7 @@
                         <font size="2"><i>02/25/2014.</i></font>
                         <br>
                         This engine is based on the work of Anitescu and Tasora.  See <a href="http://ied.unipr.it/tasora/projects/gpu/index.html"> Tasora's 
-                            mechanical system simulation page</a> for pictures and technical papers on the methods.  
+                        mechanical system simulation page</a> for pictures and technical papers on the methods.  
                         The basic model is the complementarity problem similar to the engines described on this page, 
                         but it is modified to take the form of a second-order cone constrained optimization problem (SOCCOP).  
                         It is solved with a matrix-free method.  They have simulated up to about 1,000,000 bodies coupled through 
@@ -80,35 +99,22 @@
                 </div>
                 </li>
 
-                <li>
-                <div>
-                    <p><span> <a href="http://www.arishapiro.com/dance/">Dance</a>
-                        <br>
-                        Recently updated the binary version which is available for Windows with installer. The entire DANCE system is 
-                        now open with all source code included. It supports the import/export of motion capture with easy plugin interface. 
-                        Physical simulation of characters with dynamic control and pose-based dynamic control is available for DANCE. 
-                        Besides, it has also been integrated with the Open Dynamics Engine(ODE).
-                        <br>
-                        <font size="2"><i>01/01/2013.</i></font>
-                        <br>
-                        This system is still actively being developed.
-                        <br><font size="2"><i>01/09/2010.</i></font>
-                        <br>
-                        This is a multibody dynamics simulator based on SD/Fast and targeted at animation applications.  It appears 
-                        as though rigid-rigid contacts are supported through "actuator plug-ins," which can be implemented as a penalty method.
-                        <br>
-                        <font size="2"><i>01/31/2002.</i></font>
-                        <p></p>  </span></p>
-                </div>
-                </li>
+
 
                 <li>   
                 <div> 
-                    <p><span>  <a href="http://dart.golems.org/dart/">DART</a>
+                    <p><span>  <a href="https://dartsim.github.io/">DART</a>
+                        <br> DART is accurate and stable for especially humanoid robot simulation, due to its use of generalized coordinates
+                        to represent articulated rigid body systems and Featherstone’s Articulated Body Algorithm to compute the dynamics
+                        of motion. DART has been fully integrated with Gazebo, together with ODE and Simbody. DART supports dynamics systems
+                        with closed-loop structure. DART handles contacts and collisions using an implicit LCP to guarantee non-penetration,
+                        directional friction, and approximated Coulomb friction cone condition. 
+                        <br>          
+                        <font size="2"><i>05/07/2018.</i></font> 
                         <br> Dynamic Animation and Robotics Toolkits (DART) is an open source library for developing kinematic and dynamic
                         applications in robotics and computer animation. DART uses generalized coordinates to represent articulated
                         rigid body systems and computes Lagrange's equations derived from D'Alembert's principle to describe the
-                        dynamics of motion.  The contact and collision are handled using an implicit time-stepping, velocity- based
+                        dynamics of motion.  The contact and collision are handled using an implicit time-stepping, velocity-based
                         linear complementarity problem (LCP) to guarantee non-penetration, directional friction and approximated Coulomb's
                         friction cone conditions. The LCP problem is solved by Lemke's algorithm.              
                         <br>          
@@ -119,20 +125,13 @@
 
                 <li>
                 <div>
-                    <span><a href="http://assassin.cs.rpi.edu/~nguyeb2/dVC3d/">dVC3d</a>
-                        <br>
-                        dVC3d is a physical simulation engine that focuses on accurate robotics application and testing of different 
-                        cutting edge theories in physical simulation. Theoretically, it inherits the basic framework from dVC2Dd. Beside 
-                        moving completely to 3D, dVC3d also integrates research works developed recently.
-                        <br>
-                        <font size="2"><i> 03/06/2012.</i></font>
-                        <p></p>   </span>
-                </div>
-                </li>
-
-                <li>
-                <div>
                     <span> <a href="http://gazebosim.org/">Gazebo</a>
+                        <br>
+                        Gazebo is moving towards ignition libraries, with ignition-cmake, ignition-math, ignition-msgs, ignition-transport, etc. 
+                        An updated documentation platform has been created for <a href="ignitionrobotics.org"> ignition robotics </a>. Gazebo also
+                        incorporates vehicle simulation using Prius model. The underlying physics of Gazebo relies on ODE, Bullet and Simbody. 
+                        <br>
+                        <font size="2"><i> 05/07/2018.</i></font>
                         <br>
                         Gazebo is a multi-robot simulator for outdoor environment. It has been used in the 
                         <a href= "http://www.darpa.mil/Our_Work/TTO/Programs/DARPA_Robotics_Challenge.aspx">Darpa Robotics Challenge (DRC)</a>. 
@@ -151,7 +150,21 @@
 
                 <li>
                 <div>
-                    <span> <a href="http://www.impulse-based.de/">IBDS</a>
+                    <span> <a href="https://github.com/InteractiveComputerGraphics/PositionBasedDynamics">Position-Based Dynamics</a>
+                        <br>
+                        This library supports the physically-based simulation of mechanical effects. In the last years position-based
+                        simulation methods have become popular in the graphics community. In contrast to classical simulation
+                        approaches these methods compute the position changes in each simulation step directly, based on the
+                        solution of a quasi-static problem. Therefore, position-based approaches are fast, stable and controllable
+                        which make them well-suited for use in interactive environments. However, these methods are generally not
+                        as accurate as force-based methods but still provide visual plausibility. Hence, the main application areas
+                        of position-based simulation are virtual reality, computer games and special effects in movies and commercials.
+
+                        The PositionBasedDynamics library allows the position-based handling of many types of constraints in a
+                        physically-based simulation. Position-Based Dynamics is now
+                        <a href="https://github.com/InteractiveComputerGraphics/PositionBasedDynamics"> open-source on github</a>. 
+                        <br>
+                        <font size="2"><i> 05/07/2018.</i></font>
                         <br>
                         These comments are based on my reading of the 2006 paper, <a href="http://i31www.ira.uka.de/docs/PaperFinal.pdf">
                             "Constraint-based collision and contact handling using impulses"</a>.  In one time-step, this simulator identifies 
@@ -170,43 +183,34 @@
 
                 <li>
                 <div>
-                    <span> <a href="http://mbsim.berlios.de/"> MBSim</a>
+                    <span> <a href="https://github.com/mbsim-env/"> MBSim</a>
+                        <br>
+                        MBSim represents a universal simulation tool for multibody systems. The main focus of this software is the efficient
+                        treatment of unilateral and bilateral rigid contacts to calculate nonsmooth dynamics. As integration method amongst
+                        others modern time stepping methods are available in MBSim. The created models can be visualized by an interface to OpenMBV. 
+
+                        The kernel of MBSim was developed at the Institute within a dissertation and is provided under the GNU General
+                        Public License on the hosting platform Github.  
+                        <br><font size="2"><i>05/07/2018.</i></font> 
+
                         <br>
                         This project is being developed by the Center for Applied Mechanics at Technical University of Munich.  It uses 
                         prox function formulations of the time-stepping subproblems to properly handle unilateral contacts with quadratic 
                         Coulomb friction.  One drawback is that collision detection is not general.  Pairs of geometric primitives are 
                         manually chosen for contact monitoring.
-                        <br><font size="2"><i>03/07/2012.</i></font><br>
+                        <br><font size="2"><i>03/07/2012.</i></font> 
                         <p></p>  </span>
                 </div>
                 </li>
 
                 <li>
                 <div>
-                    <span> <a href="http://physsim.sourceforge.net/index.html">Moby</a>
+                    <span>  <a href="http://www.ode.org/">Open Dynamics Engine</a>
                         <br>
-                        Moby contains multiple joint constraints such as revolute, prismatic, spherical and so on. Besides, two optional 
-                        convex solving methods incorporated in Moby are fast(active set QP-based) solver and accurate(interior-point 
-                        quadratically constrained quadratic program-based) solver. Multiple integrator types are supported and thanks to 
-                        the plugin of ODEPACK, the time stepper in Moby can now be variable step. Articulated bodies are supported
-                        using both independent coordinate and absolute coordinate representations. 
+                        ODE is not actively releasing new features, and the source code is maintained on
+                        <a href = "https://bitbucket.org/odedevs/ode"> Github </a> by ODE Devs. 
+                        <br><font size="2"><i>05/07/2018.</i></font>
 
-                        <br><font size="2"><i>01/01/2013.</i></font><br>
-
-                        Moby uses the Anitescu/Potra time-stepping method augmented with Baumgarte stabilization for the bilateral constraints.
-                        No stabilization is used for the unilateral constraints, which means that unilateral constraints are added to the 
-                        time-stepping subproblems as penetrations occur, and no attempt is made to correct these penetrations.  This means 
-                        that penetrations are controlled using an event-driven approach that adjusts the time steps to find the time when 
-                        each contact occurs.  Several LCP methods have been incorporated: Lemke, Lemke with Yamane's modification, and PATH.
-                        <br>
-                        <font size="2"><i> 04/01/2010.</i></font>
-                        <p></p> </span>
-                </div>
-                </li>
-
-                <li>
-                <div>
-                    <span>  <a href="http://ode-wiki.org/wiki/index.php?title=Main_Page">Open Dynamics Engine</a>
                         <br>
                         ODE use the maximal coordinate solver: Projected Gauss Seidel (PGS), and the default maximum number of iterations in 
                         PGS solver is 40. Once it runs out of the maximum, the loop terminates with the solution from the last iteration. To
@@ -230,7 +234,11 @@
 
                 <li>
                 <div>
-                    <span> <a href="https://code.google.com/p/rpi-matlab-simulator/">RPISim</a>
+                    <span> <a href="https://github.com/rosebudflyaway/rpisim">RPISim</a>
+                        <br>
+                        RPI-MATLAB-Simulator (RPISim) is not actively releasing features, but the source code is maintained on
+                        <a href = "https://github.com/rosebudflyaway/rpisim"> Github </a> due to the disfunction of Google code.
+                        <br><font size="2"><i>05/07/2018.</i></font> 
                         <br>
                         RPI-MATLAB-Simulator (RPISim) is a physics engine and simulator in MATLAB. RPISim is aimed at building a modular simulator 
                         for both teaching and research. RPISim contains multiple joint constraints such as revolute, prismatic, spherical and so on.
@@ -247,7 +255,12 @@
 
                 <li>
                 <div>
-                    <span> <a href="http://rbdl.bitbucket.org/">RBDL</a>
+                    <span> <a href="https://rbdl.bitbucket.io/">RBDL</a>
+                        <br>
+                        RBDL supports new constraint type CustomConstraint, which is a versatile interface to define more general types of constraints.
+                        It also adds support to specify external forces on bodies on constrained forward dynamics. RBDL added support for closed-loop
+                        models by replacing Contacts API by a new Constraint AP, in a most recent release in 2018, with the second latest update in 2016.
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         Rigid Body Dynamics Library(RBDL) performs the dynamics computation in a very efficient manner for models using 
                         generalized coordinates. It uses Featherstone's Spatial Algebra and allows for efficient evaluation of forward 
@@ -262,6 +275,13 @@
                 <div>
                     <span> <a href="https://simtk.org/home/simbody/"> Simbody</a>
                         <br>
+                        Simbody uses an advanced Featherstone-style formulation of rigid body mechanics to provide results in Order(n) time
+                        for any set of n generalized coordinates. This can be used for internal coordinate modeling of molecules, or for coarse-grained
+                        models based on larger chunks. It is also useful for large-scale mechanical models, such as neuromuscular models of human gait,
+                        robotics, avatars, and animation. Simbody can also be used in real time interactive applications for biosimulation as well as
+                        for virtual worlds and games. 
+                        <br><font size="2"><i>05/07/2018.</i></font>
+                        <br>
                         Simbody provides general multibody dynamics capability to solve Newton's second law in any set of generalized 
                         coordinates subject to any arbitrary constraint. Simbody uses an advanced featherstone-style formulation of 
                         rigid body mechanics to solve in O(n) time for any set of n genearlized coordinates. 
@@ -273,6 +293,13 @@
                 <li>
                 <div>
                     <span> <a href="http://siconos.gforge.inria.fr/"> Siconos Platform</a>
+                        <br>
+                        Siconos is an open-source scientific software primarily targeted at modeling and simulating nonsmooth dynamical systems.
+                        Siconos is one of the simulators that supports the nonsmooth multibody dynamics system with unilateral contact and Coulomb
+                        friction. Siconos supports various formulations (LCP, NCP, QP, ...) with dedicated solvers for each of the formulation.
+                        They have a nonsmooth Gauss-Seidel solver and some LCP solvers can be found here: http://siconos.gforge.inria.fr/users_guide/lcp_solvers.html
+                        <br><font size="2"><i>05/07/2018.</i></font> 
+                        
                         <br>
                         SICONOS is an open source scientific software primarily targeted at modeling and simulating nonsmooth dynamical 
                         system. There are some videos updated in granular terrain simulation on the web page. The directory hierarchy is 
@@ -294,6 +321,12 @@
                 <div>
                     <span>  <a href="http://www.sofa-framework.org/">SOFA</a>
                         <br>
+                        The SOFA engine provides many algorithms and physiological models. SOFA includes different integration schemes
+                        and linear system solvers. As for the physical models for rigid bodies, SOFA supports articulated bodies based
+                        on penalties or reduced coordinates. 
+                        <br>
+                        <font size="2"><i> 05/07/2018.</i></font>
+                        <br>
                         Simulation Open Framework Architecture (SOFA) is an open source (LGPL) software package, primarily intended 
                         for real-time dynamic simulation in the medical field.  It's been around since 2006-2007, and is developed 
                         by a large team. SOFA includes cluster and GPU support, including using CUDA, and they are working on support 
@@ -304,20 +337,6 @@
                         <p></p> </span>
                 </div>
                 </li>
-
-                <li>
-                <div>
-                    <span>  <a href="http://code.google.com/p/solfec/">Solfec</a>
-                        <br>
-                        Solfec is an  implicit three-dimensional multibody frictional Contact Dynamics software. Both serial and 
-                        parallel (MPI) versions are being actively developed. The non-smooth, velocity level frictional contact 
-                        law (Signorini-Coulomb) is solved by means of a nonlinear Gauss-Seidel or a projected quasi-Newton method. 
-                        Rigid, pseudo-rigid and finite element kinematics is included.
-                        </br>
-                        <font size="2"><i> 05/19/2011.</i></font>	 </span>
-                </div>
-                </li>
-
 
             </ul>
         </div>
@@ -330,8 +349,14 @@
                 <div>
                     <span> <a href="http://www.mscsoftware.com/Contents/Products/CAE-Tools/Adams.aspx">Adams</a>
                         <br>
+                        Utilizing multibody dynamics solution technology, Adams runs nonlinear dynamics in a fraction of the time
+                        required by FEA solutions. Loads and forces computed by Adams simulations improve the accuracy of FEA by
+                        providing better assessment of how they vary throughout a full range of motion and operating environments.
+                        <br><font size="2"><i>05/07/2018.</i></font>
+                        <br>
                         Simulation of unilateral contact is still via a penalty method.
-                        <br><font size="2"><i>01/09/2010.</i></font><br>
+                        <br><font size="2"><i>01/09/2010.</i></font>
+                        <br>
                         "Adams Solver" solves rigid body contact problems with a penalty method.  It exhibited problems typical 
                         of penalty methods.  For example, I tried rolling a faceted approximation of a uniform sphere on a plane 
                         and had to try many parameter settings before Solver returned a solution approximating the known exact solution.
@@ -345,9 +370,24 @@
                 <div>
                     <span> <a href="http://www.animats.com/">Animats</a>
                         <br>
+                        Falling Bodies is a spring/damper simulator using a reduced degree of freedom model to create a set of ordinary
+                        differential equations, which are then integrated forward using both explicit and implicit integrators. Joints
+                        are handled by the reduced degree of freedom model using generalized coordinates. Collisions are modeled as
+                        exponential springs. Some new techniques, covered by a pending U.S. patent, allow Falling Bodies to deal
+                        effectively and reliably with the very stiff numerical systems that result from this formulation. Collision 
+                        detection is based on convex polyhedra, with a distance measure using the GJK algorithm front-ended by an
+                        axis-oriented bounding box system.
+
+                        Most other simulators for animation and games use an impulse/constraint approach. It's inherent in the impulse/constraint
+                        approach that collisions result in instantaneous changes in direction and velocity. That looks subtly wrong;
+                        light and heavy objects bounce the same way, and the viewer doesn't get the impression of weight when a heavy object hits.
+                        We call this the "boink problem". Our approach, using nonlinear springs to simulate collisions, provides a more accurate
+                        simulation; heavy and light objects bounce differently. This, incidentally, is why Falling Bodies is slower than some of
+                        the competitive products. Now that 1GHz PCs are shipping, this is much less of a problem than it used to be.
+                        <br><font size="2"><i>05/07/2018.</i></font>
+                        <br>
                         According to John Nagel of Animats, Falling Bodies, mentioned below, has been licensed to Havok for 
                         the past five years.
-
                         <br><font size="2"><i>04/01/2010.</i></font><br>
                         The Animats web page is still under active development.  Of interest is that they have patented at least 
                         two algorithms: (Patent 1) "Robots which can run up hills without slipping are usually covered by this patent."  
@@ -370,6 +410,9 @@
                 <div>
                     <span> <a href="http://www.maxon.net/en/home.html">Cinema 4D Dynamics</a>
                         <br>
+                        I didn't get much meaningful information about physics simulation on their website.
+                        <br><font size="2"><i>05/07/2018.</i></font>
+                        <br>
                         Animations are done by key-framing, which would imply that
                         there are no built-in rigid body dynamics algorithms.
                         I was unable to find impressive videos that I saw 8 years ago here.
@@ -388,6 +431,10 @@
                 <li>
                 <div>
                     <span> <a href="http://www.concurrent-dynamics.com/">DynaWiz</a>
+                        <br>
+                        It looks like the software has changed its name to Concurrent Dynamics, and
+                        the website has not been updated recently. 
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         DynaWiz has been updated to allow unilateral contacts to occur during
                         run-time. Here is a quote from the web page about solution the
@@ -414,7 +461,13 @@
 
                 <li>
                 <div>
-                    <span>  <a href="http://www.gamephys.com/tag/havok-physics/"> Havok Physics</a>
+                    <span>  <a href="https://www.havok.com/physics/"> Havok Physics</a>
+                        <br>
+                        Havok Physics supports a wide variety of useful game-ready constraint types. It has
+                        continuous collision detection for environments, characters and vehicles. The Havok
+                        physics focuses more on simulation for games, with enhanced run-time performance, reduced
+                        memory footprint, etc. 
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         This system is still actively being developed.  There are many
                         interesting videos with flexible objects and fluid flow.
@@ -430,25 +483,14 @@
                         <p></p>  </span>
                 </div>
                 </li>
-
                 <li>
                 <div>
-                    <span> <a href="http://www.imdb.com/">Internet Movie Database (IMDb)</a>
+                    <span> <a href="https://www.plm.automation.siemens.com/es/products/lms/virtual-lab/legacy-applications/dads.shtml">LMS Dads</a>
                         <br>
-                        The IMDb is an online database of information related to movies,
-                        television shows, actors, video games and fictional characters
-                        featured in visual entertaiment media.
-                        <br><font size="2"><i>03/06/2012.</i></font><br>
-                        I didn't find anything related to Multibody Dynamics on the web page.
-                        <br>		
-                        <font size="2"><i> 03/06/2012.</i></font>
-                        <p></p> </span>
-                </div>
-                </li>
-
-                <li>
-                <div>
-                    <span> <a href="http://www.lmsintl.com/">LMS DADS</a>
+                        Siemens embedded the LMS Dads into LMS virtual.Lab and now with the LMS Virtual.Lab Motion, you can quickly start
+                        with the sketcher, the automatic assembly capabilities and the library of mechanism elements in LMS Virtual.Lab Motion.
+                        Users can parameterize models, analyze more design variants and move from single point analysis to design space exploration.
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         From an engineer at LMS, I learned that the user can specify a
                         linear stiffness and damping model Kelvin-Voigt) to generate the
@@ -468,9 +510,14 @@
                 </div>
                 </li>
  
-                               <li>
+                <li>
                 <div>
                     <span> <a href="http://www.autodesk.com/products/autodesk-maya/overview">Maya</a>
+                        <br>
+                        The Bullet plug-in provides seamless mapping of Bullet objects to Maya objects. The controls to the Bullet objects
+                        are exposed in Maya Objects, and the interaction follows the typical Maya dynamics paradigm. Maya also provides
+                        deep adaptive fluid simulation and ocean simulation system with waves, ripples, and wakes. 
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         Maya is a comprehensive 3D animation software, which offers a comprehensive creative
                         feature set for 3D computer animation, modeling, simulation, rendering, and compositing 
@@ -490,7 +537,13 @@
                 <div>
                     <span> <a href="http://en.wikipedia.org/wiki/PhysX">PhysX</a>
                         <br>
-                        You can easily find lots of info on PhysX on line.  What you
+                        Not sure whether PhysX is still solving the complementarity problem for the frictional contacts.
+                        But after a quick search around, I found the NVIDIA GPUGems has a demo to solve the complementarity
+                        problem using Lemke's algorithm here: https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch33.html
+                        <br>
+                        <font size="2"><i> 05/07/2018.</i></font>
+                        <br>
+                        You can easily find lots of info on PhysX online.  What you
                         won't find is that when Ageia originally developed the engine,
                         it was based on the impulse-velocity time-stepping formulations
                         of Stewart-Trinkle and Anitescu-Potra.  So friction and
@@ -507,6 +560,10 @@
                 <div>
                     <span> <a href="http://www.simpack.com/">SIMPACK</a>
                         <br>
+                        I didn't find anything new related to the contact models on the website.
+                        <br>
+                        <font size="2"><i>05/07/2018.</i></font>
+                        <br>
                         This package implements a penalty method using a <a href="http://www.pcm.hippmann.org/">polygonal contact 
                             model</a> developed by Gerhard Hippman.  Contact forces can be specified as functions of penetration volumes, 
                         depths, elastic moduli, material deformation damping constants, Poisson's ratio, etc.
@@ -518,7 +575,17 @@
 
                 <li>
                 <div>
-                    <span>  <a href="http://www.tokamakphysics.com/index.htm">Tokamak</a>
+                    <span>  <a href="https://en.wikipedia.org/wiki/Tokamak_(software)">Tokamak</a>
+                        <br>
+                        Tokamak features a unique iterative method for solving constraints. This is claimed to allow developers to make
+                        trade-offs between accuracy and speed and provides more predictable processor and memory usage. Tokamak's
+                        constraint solver does not involve solving large matrices, thereby avoiding memory bandwidth limitations on some game consoles.
+
+                        The SDK supports a variety of joint types and joint limits and a realistic friction model. Tokamak is optimized for
+                        stacking large numbers of objects - a frequently requested feature by game developers. Tokamak provides collision
+                        detection for primitives (box, sphere, capsule), combinations of primitives, and arbitrary static triangle meshes.
+                        Lightweight 'rigid particles' provide particle effects in games at minimal cost.
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         Tokamak Game Physics SDK is a high performance real-time physics library designed specially for games. 
                         Tokamak features a unique iterative method for solving constraint, which allows developers to make the trade-off 
@@ -529,30 +596,13 @@
                 </div>
                 </li>
 
-                <li>
-                <div>
-                    <span>  <a href="http://umbra.sandia.gov/">Umbra</a>
-                        <br>
-                        Umbra development has intensified.  Michael Skroch, manager of the group developing Umbra, said, "I have 
-                        been focusing on Umbra being useful for the nexus of physical-cyber-behavior concepts in a 3D embodied environment.   
-                        We've started work on parallelizing Umbra and providing multi-thread enhancements.  We also are working with GPUs 
-                        to improve speed."
-                        <br><font size="2"><i> 05/01/2010.</i></font><br>
-                        Umbra is a general simulation and visualization environment developed by Fred Oppel and Eric Gottlieb at Sandia National
-                        Laboratories.  It contains a rigid body dynamics module developed by Eric Gottlieb with technical guidance from Florian 
-                        Potra and Jeff Trinkle.  The time-stepping algorithm is based on the Stewart-Trinkle LCP formulation (in terms of 
-                        velocities and impulses). All the videos on this web page were produced with Umbra.  Even though there is currently no 
-                        impact law is implemented, bouncing behavior can be observed in the animations.  This is simply a side effect of the 
-                        constraint stabilization in the Stewart-Trinkle algorithm.  Many enhancements are underway.
-                        <br>
-                        <font size="2"><i> 12/23/2002.</i></font>
-                        <p></p> </span>
-                </div>
-                </li>
 
                 <li>
                 <div>
-                    <span> <a href="http://www.mscsoftware.com/support/faq/vn4d/index.cfm"> visual Nastran 4D</a>
+                    <span> <a href="http://www.mscsoftware.com/product/msc-nastran-desktop"> MSC Nastran</a>
+                        <br>
+                        I didn't find anything related to dynamics or contact models online about this simulator.
+                        <br><font size="2"><i>05/07/2018.</i></font>
                         <br>
                         This product is available, but I found much less information about it than other MSC products.
                         <br><font size="2"><i>01/09/2010.</i></font><br>
@@ -568,7 +618,13 @@
 
                 <li>
                 <div>
-                    <span>  <a href="http://www.cm-labs.com/">Vortex</a>
+                    <span>  <a href="https://www.cm-labs.com/vortex-studio/">Vortex</a>
+                        <br>
+                        Vortex now becomes "Vortex Simulation Studio Platform", which models the constraints and environment precisely. There
+                        are some really impressive videos on the website. Vortex studio can provide the tools to create engaging virtual training
+                        simulation for tactical vehicle or heavy equipment operators.
+                        <br><font size="2"><i>05/07/2018.</i></font>
+
                         <br>
                         Vortex 5.1 with the new Vortex Editor puts the vehicles, robots, heavy equipment and more into high-fidelity synthetic 
                         environments for operator training, mission rehearsal, virtual prototyping and testing. 
@@ -634,6 +690,51 @@
 
                 <li>
                 <div>
+                    <p><span> <a href="http://www.arishapiro.com/dance/">Dance</a>
+                        <br>
+                        This has been updated since 2012.
+                        <br>
+                        <font size="2"><i>05/07/2018.</i></font>
+
+                        <br>
+                        Recently updated the binary version which is available for Windows with installer. The entire DANCE system is 
+                        now open with all source code included. It supports the import/export of motion capture with easy plugin interface. 
+                        Physical simulation of characters with dynamic control and pose-based dynamic control is available for DANCE. 
+                        Besides, it has also been integrated with the Open Dynamics Engine(ODE).
+                        <br>
+                        <font size="2"><i>01/01/2013.</i></font>
+                        <br>
+                        This system is still actively being developed.
+                        <br><font size="2"><i>01/09/2010.</i></font>
+                        <br>
+                        This is a multibody dynamics simulator based on SD/Fast and targeted at animation applications.  It appears 
+                        as though rigid-rigid contacts are supported through "actuator plug-ins," which can be implemented as a penalty method.
+                        <br>
+                        <font size="2"><i>01/31/2002.</i></font>
+                        <p></p>  </span></p>
+                </div>
+                </li>
+
+                <li>
+                <div>
+                    <span><a href="http://assassin.cs.rpi.edu/~nguyeb2/dVC3d/">dVC3d</a>
+                        <br>
+                        dVC3d has not been updated since 2014.
+                        <br>
+                        <font size="2"><i> 05/07/2018.</i></font>
+
+                        <br>
+                        dVC3d is a physical simulation engine that focuses on accurate robotics application and testing of different 
+                        cutting edge theories in physical simulation. Theoretically, it inherits the basic framework from dVC2Dd. Beside 
+                        moving completely to 3D, dVC3d also integrates research works developed recently.
+                        <br>
+                        <font size="2"><i> 03/06/2012.</i></font>
+                        <p></p>   </span>
+                </div>
+                </li>
+
+                <li>
+                <div>
                     <span> <a href="http://dynamechs.sourceforge.net/projects.html">DynaMechs</a>
                         <br>
                         I can't find anything about unilateral contacts on the web page, but I learned from David Orin that unilateral
@@ -669,6 +770,32 @@
 
                 <li>
                 <div>
+                    <span> <a href="http://physsim.sourceforge.net/index.html">Moby</a>
+                        <br>
+                        Moby has not been updated since 2012.
+                        <br><font size="2"><i>05/07/2018.</i></font>
+                        <br>
+                        Moby contains multiple joint constraints such as revolute, prismatic, spherical and so on. Besides, two optional 
+                        convex solving methods incorporated in Moby are fast(active set QP-based) solver and accurate(interior-point 
+                        quadratically constrained quadratic program-based) solver. Multiple integrator types are supported and thanks to 
+                        the plugin of ODEPACK, the time stepper in Moby can now be variable step. Articulated bodies are supported
+                        using both independent coordinate and absolute coordinate representations. 
+
+                        <br><font size="2"><i>01/01/2013.</i></font><br>
+
+                        Moby uses the Anitescu/Potra time-stepping method augmented with Baumgarte stabilization for the bilateral constraints.
+                        No stabilization is used for the unilateral constraints, which means that unilateral constraints are added to the 
+                        time-stepping subproblems as penetrations occur, and no attempt is made to correct these penetrations.  This means 
+                        that penetrations are controlled using an event-driven approach that adjusts the time steps to find the time when 
+                        each contact occurs.  Several LCP methods have been incorporated: Lemke, Lemke with Yamane's modification, and PATH.
+                        <br>
+                        <font size="2"><i> 04/01/2010.</i></font>
+                        <p></p> </span>
+                </div>
+                </li>
+
+                <li>
+                <div>
                     <span>  <a href="http://robotics.stanford.edu/groups/manips/projects/sai/index.html"> Simulation and Active Interfaces</a>
                         <br>
                         This project is no longer under development and the link is broken
@@ -682,6 +809,49 @@
                         <p> </p> </span>
                 </div>
                 </li>
+
+                <li>
+                <div>
+                    <span>  <a href="http://code.google.com/p/solfec/">Solfec</a>
+                        <br>
+                        It looks like Solfec has stopped updating since 2013, and the source code is still hosted on Google code, which
+                        was turned down in 2016. 
+                        </br>
+                        <font size="2"><i> 05/07/2018.</i></font>    </span>
+                        <br>
+                        Solfec is an  implicit three-dimensional multibody frictional Contact Dynamics software. Both serial and 
+                        parallel (MPI) versions are being actively developed. The non-smooth, velocity level frictional contact 
+                        law (Signorini-Coulomb) is solved by means of a nonlinear Gauss-Seidel or a projected quasi-Newton method. 
+                        Rigid, pseudo-rigid and finite element kinematics is included.
+                        </br>
+                        <font size="2"><i> 05/19/2011.</i></font>  <p> </p>  </span>
+                </div>
+                </li>
+
+                <li>
+                <div>
+                    <span>  <a href="http://umbra.sandia.gov/">Umbra</a>
+                        <br>
+                        This seems defunct now and has no update since 2012. 
+                        <br><font size="2"><i> 05/07/2018.</i></font>
+                        <br>
+                        Umbra development has intensified.  Michael Skroch, manager of the group developing Umbra, said, "I have 
+                        been focusing on Umbra being useful for the nexus of physical-cyber-behavior concepts in a 3D embodied environment.   
+                        We've started work on parallelizing Umbra and providing multi-thread enhancements.  We also are working with GPUs 
+                        to improve speed."
+                        <br><font size="2"><i> 05/01/2010.</i></font><br>
+                        Umbra is a general simulation and visualization environment developed by Fred Oppel and Eric Gottlieb at Sandia National
+                        Laboratories.  It contains a rigid body dynamics module developed by Eric Gottlieb with technical guidance from Florian 
+                        Potra and Jeff Trinkle.  The time-stepping algorithm is based on the Stewart-Trinkle LCP formulation (in terms of 
+                        velocities and impulses). All the videos on this web page were produced with Umbra.  Even though there is currently no 
+                        impact law is implemented, bouncing behavior can be observed in the animations.  This is simply a side effect of the 
+                        constraint stabilization in the Stewart-Trinkle algorithm.  Many enhancements are underway.
+                        <br>
+                        <font size="2"><i> 12/23/2002.</i></font>
+                        <p></p> </span>
+                </div>
+                </li>
+
             </ul>
         </div>
 
